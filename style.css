@@ -1,6 +1,6 @@
 .maincontainer {
     display: grid;
-    grid-template-columns: 30% 50% 20% ;
+    grid-template-columns: 20% 50% 30% ;
     background-color: aqua;
     padding: 10px;
     gap: 1px;
@@ -13,9 +13,10 @@
 }
 #dash {
     display: grid;
-    padding: 15px;
     grid-row-start: 1;
     grid-row-end: 5;
+    padding: 15px;
+    align-content: start;
 }
 #search {
     display: grid;
