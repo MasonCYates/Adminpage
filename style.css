@@ -1,0 +1,24 @@
+.maincontainer {
+    display: grid;
+    grid-template-columns: 30% 50% 20% ;
+    background-color: aqua;
+    padding: 10px;
+    gap: 1px;
+    height: 56.5rem;
+}
+.item {
+    display: grid;
+    max-height: fit-content;
+    border: 2px solid black;
+}
+#dash {
+    display: grid;
+    padding: 15px;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+#search {
+    display: grid;
+    padding: 10px;
+
+}
