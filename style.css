@@ -1,3 +1,6 @@
+body {
+    background-color: black;
+}
 .maincontainer {
     display: grid;
     grid-template-columns: 15% 70% 15% ;
@@ -40,9 +43,6 @@
     max-height: fit-content;
     border: 2px solid black;
 }
-#imgimg {
-
-}
 #dash {
     display: grid;
     grid-row-start: 1;
@@ -70,16 +70,50 @@
     margin-top: 6px;
     border: 1px solid black;
     height: 20px;
-    border-radius: 7px;
+    border-radius: 21px;
+}
+#announce, #trend {
+    display: grid;
+    gap: 2px;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+.an {
+    border:2px solid black ;
+    width: 15rem;
+    padding: 10px;
+}
+#an {
+    display: grid;
+    align-content: center;
+    height: 20px;
+    width: 15rem;
+    padding: 10px;
+    font-size: 20px;
+}
+.cleared {
+    text-decoration: none;
 }
 .submit {
     border: 1px solid black;
-    border-radius: 7px;
+    border-radius: 21px;
+}
+#userbutt {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: center;
+    justify-content: center;
+    gap: 14px;
+}
+.new, .upload, .share {
+    width: 75px;
+    height: 25px;
+    border-radius: 21px;
 }
 .user-name {
     font-size: 20px;
     margin-top: 10px;
-    margin-left: 15px;
+    margin-left: 35px;
     text-decoration: none;
 }
 .username {
