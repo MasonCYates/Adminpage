@@ -1,15 +1,47 @@
 .maincontainer {
     display: grid;
-    grid-template-columns: 20% 50% 30% ;
+    grid-template-columns: 15% 70% 15% ;
+    grid-template-rows: 7% 10% 40% 43%;
     background-color: aqua;
-    padding: 10px;
     gap: 1px;
-    height: 56.5rem;
+}
+#creator {
+    padding-top: 35px;
+}
+.projgrids {
+    display: inline-grid;
+    grid-template-columns: 10% 10% 10% auto;
+    
+}
+.proje {
+    margin-top: 7px;
+}
+.img1 {
+    max-width: 25px;
+    max-height: 25px;
+}
+.img2 {
+    max-width: 45px;
+    max-height: 45px;
+}
+.img3 {
+    max-width: 21px;
+    max-height: 21px;
+}
+.projgrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 8% auto auto;
+    gap: 2rem;
+    margin: 2px 2rem 2rem 2rem;
 }
 .item {
     display: grid;
     max-height: fit-content;
     border: 2px solid black;
+}
+#imgimg {
+
 }
 #dash {
     display: grid;
@@ -17,9 +49,69 @@
     grid-row-end: 5;
     padding: 15px;
     align-content: start;
+    border: 2px solid black;
+}
+#search, #user {
+    display: grid;
+    grid-template-columns: 15% auto;
+    padding: 10px;
+}
+#projects {
+    display: grid;
+    grid-row-start: 3;
+    grid-row-end: 5;
 }
 #search {
+    display: inline;
+}
+.search {
+    width: 60rem;
+    text-align: center;
+    margin-top: 6px;
+    border: 1px solid black;
+    height: 20px;
+    border-radius: 7px;
+}
+.submit {
+    border: 1px solid black;
+    border-radius: 7px;
+}
+.user-name {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+.username {
+    display: inline-grid;
+    align-content: center;
+    justify-content: center;
+    font-size: 32px;
+}
+.proj, .projview {
     display: grid;
-    padding: 10px;
-
+    border: 2px solid black;
+    align-content: center;
+    
+}
+.projview {
+    display: grid;
+    justify-content: center;
+}
+#p {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 24px;
+    align-content: center;
+    padding-left: 45px;
+}
+.d {
+    display: inline-grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+}
+.swap {
+    text-decoration: none;
+    font-size: 16px;
 }
