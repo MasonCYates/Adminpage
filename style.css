@@ -2,11 +2,26 @@ body {
     background-color: black;
 }
 .maincontainer {
+    border: 1px solid yellow;
     display: grid;
     grid-template-columns: 15% 70% 15% ;
     grid-template-rows: 7% 10% 40% 43%;
+    background-color: slategray;
+    border-radius: 21px;
+}
+.sbutton {
+    width: 75px;
+    height: 25px; 
+    border-radius: 15px;
     background-color: white;
-    gap: 1px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: fantasy;
+    margin-top: 2px;
+}
+.sbutton:hover {
+    border: 0 0 2px lime;
+    box-shadow: 0 0 9px lime;
 }
 #creator {
     padding-top: 35px;
@@ -20,14 +35,15 @@ body {
     justify-content: center;
     margin-top: 7px;
     margin-bottom: 10px;
+    font-weight: bold;
 }
 .img1 {
     max-width: 25px;
     max-height: 25px;
 }
 .img2 {
-    max-width: 45px;
-    max-height: 45px;
+    max-width: 75px;
+    max-height: 75px;
 }
 .img3 {
     max-width: 21px;
@@ -43,7 +59,6 @@ body {
 .item {
     display: grid;
     max-height: fit-content;
-    border: 2px solid black;
 }
 #dash {
     display: grid;
@@ -51,28 +66,44 @@ body {
     grid-row-end: 5;
     padding: 15px;
     align-content: start;
-    border: 2px solid black;
+    border-right: 2px solid black;
+    background-color: yellow;
+    border-top-left-radius: 21px;
+    border-bottom-left-radius: 21px;
 }
-#search, #user {
+#user {
     display: grid;
     grid-template-columns: 15% auto;
     padding: 10px;
+    background-color: slategrey;
+    border-top-right-radius: 21px;
 }
 #projects {
     display: grid;
     grid-row-start: 3;
     grid-row-end: 5;
+    background-color: black;
+    color: white;
+    border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
 }
 #search {
-    display: inline;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    align-content: center;
+    padding: 10px;
+    padding-right: 190px;
+    background-color: slategray;
 }
 .search {
     width: 60rem;
     text-align: center;
-    margin-top: 6px;
-    border: 1px solid black;
-    height: 20px;
+    height: 25px;
     border-radius: 21px;
+}
+.search:hover {
+    border: 0 0 2px lime;
+    box-shadow: 0 0 9px lime;
 }
 #announce, #trend {
     display: grid;
@@ -80,18 +111,21 @@ body {
     padding: 10px;
     padding-bottom: 30px;
 }
-.an {
-    border:2px solid black ;
-    width: 15rem;
-    padding: 10px;
+#trend {
+    background-color: yellow;
+    border-radius: 21px;
 }
-#an {
-    display: grid;
-    align-content: center;
-    height: 20px;
-    width: 15rem;
+.an {
+    border-bottom:4px solid black ;
+    width: 14rem;
+    padding: 10px;
+    background-color: white;
+    border-radius: 21px;
+}
+#an, .tproj  {
     padding: 10px;
     font-size: 20px;
+    font-weight: bold;
 }
 .acleared {
     text-decoration: none;
@@ -106,8 +140,11 @@ body {
     text-shadow: 0 0 3px lime;
     text-decoration: underline;
 }
-.cleared:active, .cleared:visited, .acleared:visited, .acleared:active, .swap:active, .swap:visited {
+.cleared:active, .cleared:visited, .acleared:visited, .acleared:active {
     color: black;
+}
+.swap:active, .swap:visited {
+    color: white;
 }
 .swap:hover {
     text-shadow: 0 0 3px lime;
@@ -123,6 +160,7 @@ body {
     align-content: center;
     justify-content: center;
     gap: 14px;
+    background-color: slategray;
 }
 .new, .upload, .share {
     width: 75px;
@@ -158,8 +196,11 @@ body {
 }
 .share:hover {
     box-shadow: 0 0 7px black;
-    background-color: red;
+    background-color: white;
     border-color: grey;
+}
+.user-name:hover {
+    text-shadow: 0 0 3px lime;
 }
 .user-name {
     font-size: 20px;
@@ -167,27 +208,31 @@ body {
     margin-left: 35px;
     text-decoration: none;
 }
-.user-name:hover {
-    text-shadow: 0 0 3px lime;
-}
 .user-name:visited, .user-name:active {
     color: black;
 }
+#un {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;;
+    padding-left: 8rem;
+    background-color: slategray;
+}
 .username {
-    display: inline-grid;
-    align-content: center;
-    justify-content: center;
     font-size: 32px;
+    font-weight: bold;
 }
 .proj, .projview {
     display: grid;
-    border: 2px solid black;
     align-content: center;
-    
 }
 .projview {
     display: grid;
     justify-content: center;
+    border-radius: 21px;
+    background-color: aliceblue;
+    box-shadow: 5px 0 9px yellow;
+    color: black;
 }
 #p {
     display: grid;
