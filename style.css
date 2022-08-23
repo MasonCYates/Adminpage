@@ -16,7 +16,10 @@ body {
     grid-template-columns: 10% 10% 10% auto;   
 }
 .proje {
+    display: grid;
+    justify-content: center;
     margin-top: 7px;
+    margin-bottom: 10px;
 }
 .img1 {
     max-width: 25px;
@@ -94,17 +97,20 @@ body {
     text-decoration: none;
 }
 .acleared:hover {
-    text-shadow: 0 0 3px black;
+    text-shadow: 0 0 3px lime;
 }
 .cleared {
     text-decoration: none;
 }
 .cleared:hover {
-    text-shadow: 0 0 3px black;
+    text-shadow: 0 0 3px lime;
     text-decoration: underline;
 }
+.cleared:active, .cleared:visited, .acleared:visited, .acleared:active, .swap:active, .swap:visited {
+    color: black;
+}
 .swap:hover {
-    text-shadow: 0 0 3px black;
+    text-shadow: 0 0 3px lime;
     text-decoration: underline;
 }
 .submit {
@@ -141,7 +147,7 @@ body {
     font-size: 14px;
 }
 .upload:hover {
-    box-shadow: 0 0 7px aqua;
+    box-shadow: 0 0 9px aqua;
     background-color: lime;
     border-color: aqua;
 }
@@ -162,7 +168,10 @@ body {
     text-decoration: none;
 }
 .user-name:hover {
-    text-shadow: 0 0 3px black;
+    text-shadow: 0 0 3px lime;
+}
+.user-name:visited, .user-name:active {
+    color: black;
 }
 .username {
     display: inline-grid;
