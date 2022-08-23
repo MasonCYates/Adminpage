@@ -37,17 +37,21 @@ body {
     margin-bottom: 10px;
     font-weight: bold;
 }
+img {
+    background: black;
+    border-radius: 15px;
+}
 .img1 {
-    max-width: 25px;
-    max-height: 25px;
+    max-width: 45px;
+    max-height: 45px;
 }
 .img2 {
     max-width: 75px;
     max-height: 75px;
 }
 .img3 {
-    max-width: 21px;
-    max-height: 21px;
+    max-width: 33px;
+    max-height: 33px;
 }
 .projgrid {
     display: grid;
@@ -137,7 +141,7 @@ body {
     text-decoration: none;
 }
 .cleared:hover {
-    text-shadow: 0 0 3px lime;
+    text-shadow: 1px 1px 5px lime;
     text-decoration: underline;
 }
 .cleared:active, .cleared:visited, .acleared:visited, .acleared:active {
@@ -223,15 +227,14 @@ body {
     font-weight: bold;
 }
 .proj, .projview {
-    display: grid;
-    align-content: center;
+    padding: 10px;
 }
 .projview {
     display: grid;
-    justify-content: center;
+    grid-template-rows: 9% 91%;
     border-radius: 21px;
     background-color: aliceblue;
-    box-shadow: 5px 0 9px yellow;
+    box-shadow: 5px 3px 15px yellow;
     color: black;
 }
 #p {
