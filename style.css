@@ -5,7 +5,7 @@ body {
     display: grid;
     grid-template-columns: 15% 70% 15% ;
     grid-template-rows: 7% 10% 40% 43%;
-    background-color: aqua;
+    background-color: white;
     gap: 1px;
 }
 #creator {
@@ -13,8 +13,7 @@ body {
 }
 .projgrids {
     display: inline-grid;
-    grid-template-columns: 10% 10% 10% auto;
-    
+    grid-template-columns: 10% 10% 10% auto;   
 }
 .proje {
     margin-top: 7px;
@@ -91,8 +90,22 @@ body {
     padding: 10px;
     font-size: 20px;
 }
+.acleared {
+    text-decoration: none;
+}
+.acleared:hover {
+    text-shadow: 0 0 3px black;
+}
 .cleared {
     text-decoration: none;
+}
+.cleared:hover {
+    text-shadow: 0 0 3px black;
+    text-decoration: underline;
+}
+.swap:hover {
+    text-shadow: 0 0 3px black;
+    text-decoration: underline;
 }
 .submit {
     border: 1px solid black;
@@ -108,13 +121,48 @@ body {
 .new, .upload, .share {
     width: 75px;
     height: 25px;
-    border-radius: 21px;
+    border-radius: 15px;
+    font-family: fantasy;
+    font-weight: bold;
+}
+.new {
+    color: midnightblue;
+    background-color: lime;
+    font-size: 14px;
+}
+.new:hover {
+    box-shadow: 0 0 7px green;
+    background-color: aqua;
+    border-color: green;
+}
+.upload {
+    color: darkgreen;
+    background-color: aqua;
+    font-size: 14px;
+}
+.upload:hover {
+    box-shadow: 0 0 7px aqua;
+    background-color: lime;
+    border-color: aqua;
+}
+.share {
+    color: black;
+    background-color: yellow;
+    font-size: 14px;
+}
+.share:hover {
+    box-shadow: 0 0 7px black;
+    background-color: red;
+    border-color: grey;
 }
 .user-name {
     font-size: 20px;
     margin-top: 10px;
     margin-left: 35px;
     text-decoration: none;
+}
+.user-name:hover {
+    text-shadow: 0 0 3px black;
 }
 .username {
     display: inline-grid;
@@ -148,4 +196,10 @@ body {
 .swap {
     text-decoration: none;
     font-size: 16px;
+}
+.icon {
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 3px;
 }
