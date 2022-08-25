@@ -125,6 +125,8 @@ img {
     padding: 10px;
     background-color: white;
     border-radius: 21px;
+    overflow: hidden;
+    min-width: 0;
 }
 #an, .tproj  {
     padding: 10px;
